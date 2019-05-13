@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cool website information</title>
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="html.html">HTML</a></li>
+                <li><a href="cssjs.html">CSS and JavaScript</a></li>
+                <li><a href="pagerank.html">PageRank</a></li>
+            </ul>
+        </nav>
+        <section class = "main-content">
+            <h1>PageRank!!!</h1>
+            <h2>What is PageRank?</h2>
+            <div class= "box2 box">
+                <p>PageRank was developed in 1998 by Google's founders Sergey Brin and Larry Page, it is used by many search engines including Google to rank web pages. PageRank provides a method to determine the value of a website for any given search term or keyword phrase. This value is determined by how websites link together with the more popular sites receiving more links. </p>
+                <img id = 'pagerankimage' src="assets/images/pagerank.jpg" alt="css image">
+            </div>
+            <h2>Crawling and Indexing</h2>
+                <div class= "box2 box">
+                    <div>
+                        <h3>What is Crawling?</h3>
+                        <p>Crawling is the process of fetching all the web pages linked with a website. This is performed by a program called crawler. These are also known as spiders or bots, they visit websites and send information to their parent website</p>
+                    </div>
+                    
+                    <div>
+                        <h3>What is Indexing?</h3>
+                        <p>Indexing is the process of creating index for all the fetched web pages and keeping them into a huge database where they can later be retreived such as a search engine database. If a website is not in a search engine's index, users will not be able to find it using that search engine.</p>
+                    </div>
+                </div>
+            <h2>PageRank algorithm</h2>
+            <img src="assets/images/pagerank-example.png" alt="page rank weighted graph">
+            <p>This graph is an example of PageRank and shows the pages as vertices and the links as edges. The percentage on each vertex shows the rank, the highest percentage is the highest ranking.</p>
+            <div class= "box2 box">
+                <ul>
+                    <li><p>PR = PageRank of Page</p></li>
+                    <li><p>C(tn) = Inbound links from Page(T)</p></li>
+                    <li><p>d = Damping Factor</p></li>
+                </ul>
+                
+                <code id = "code">PR(A) = (1– d) + d(PR(t1)/C(t1) + ... + PR(tn)/C(tn)) </code>
+            </div>
+            <div>
+                <h2>What is the Damping factor</h2>
+                <p>The damping factor is used to limit the influence of the PageRank / Inbount Links part of the algorithm</p>
+            </div>
+            <div>
+                <h2>Factors of page rank</h2>
+                <p>Factors which affect the page rank score include:<p>
+
+                <ul>
+                    <li>The number of web pages that link to the target page</li>
+                    <li>Links to high-ranking web pages score more than those to low-ranking web pages.</li>
+                    <li>Pages with lots of links add less to the score than those with few links.</li>
+                    <li>The time that the web page has been in existence also adds to the score; more established sites score more highly than recently published sites.</li>
+                </ul>
+            </div>
+
+        </section>
+    </body>
+</html>
